@@ -1,0 +1,11 @@
+[Unit]
+Description=Run GDBot updater daily
+
+[Timer]
+OnBootSec=2min
+OnCalendar=daily
+Persistent=true
+Unit=gdbot-update.service
+
+[Install]
+WantedBy=timers.target

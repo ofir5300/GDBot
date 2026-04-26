@@ -1,0 +1,16 @@
+[Unit]
+Description=GDBot Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rpi
+WorkingDirectory=/home/rpi/gdbot
+EnvironmentFile=/home/rpi/gdbot.env
+ExecStart=/home/rpi/gdbot/.venv/bin/python -m gdbot.main
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

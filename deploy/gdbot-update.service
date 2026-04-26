@@ -1,0 +1,8 @@
+[Unit]
+Description=GDBot git pull + conditional restart
+
+[Service]
+Type=oneshot
+User=rpi
+WorkingDirectory=/home/rpi/gdbot
+ExecStart=/home/rpi/gdbot/deploy/update.sh
