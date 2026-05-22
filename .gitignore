@@ -25,3 +25,6 @@ gdbot/claude-archive/
 
 # Project instructions (dev-only)
 CLAUDE.md
+
+# Local tool state
+.superset/
